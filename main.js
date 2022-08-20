@@ -1,8 +1,6 @@
 import './style.scss'
-import * as d3 from 'd3'
+import scroller from "./scroller";
 
-d3.selectAll('td')
-  .transition()
-  .style('background-color', (elem, idx) => idx === 0 ? 'gray' : 'white')
+
 
 console.log('Hello!')

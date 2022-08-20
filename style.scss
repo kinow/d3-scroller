@@ -1,6 +1,39 @@
+
 body {
-  section {
-    font-family: sans-serif;
-    text-transform: capitalize;
+  background-color: rgb(245, 244, 241);
+  overflow-x: hidden;
+  #sections {
+    position: relative;
+    display: inline-block;
+    width: 400px;
+    top: 0;
+    z-index: 90;
+    margin-right: 50px;
+
+    .step {
+      margin-bottom: 200px;
+      height: 700px;
+      /* display: flex;
+      flex-direction: column;
+      justify-content: space-around; */
+    }
+
+    #app {
+      margin: auto;
+      width: 1500px;
+      flex-direction: row;
+      align-items: start;
+      justify-content: space-around;
+    }
+
+    #vis {
+      display: inline-block;
+      position: fixed;
+      top: 0;
+      z-index: 1;
+      margin-left: 0;
+      height: 1000px;
+      width: 1000px;
+    }
   }
 }
