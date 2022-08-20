@@ -1,0 +1,9 @@
+{
+  "name": "d3-scroller",
+  "version": "1.0.0",
+  "description": "d3.js scroller",
+  "main": "index.js",
+  "author": "Bruno P. Kinoshita",
+  "license": "Apache-2.0",
+  "private":  true
+}
