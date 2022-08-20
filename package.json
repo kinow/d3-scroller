@@ -2,8 +2,17 @@
   "name": "d3-scroller",
   "version": "1.0.0",
   "description": "D3.js scroller",
-  "main": "index.js",
+  "main": "main.js",
   "author": "Bruno P. Kinoshita",
   "license": "Apache-2.0",
-  "private": true
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^3.0.7"
+  }
 }
