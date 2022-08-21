@@ -1,39 +1,83 @@
+body{
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-body {
-  background-color: rgb(245, 244, 241);
-  overflow-x: hidden;
-  #sections {
+  #app{
     position: relative;
-    display: inline-block;
-    width: 400px;
-    top: 0;
-    z-index: 90;
-    margin-right: 50px;
 
-    .step {
+    h1{
+      margin: 50px;
+    }
+
+    h1{
+      text-align: center;
+    }
+    #sections{
+      width: 340px;
+    }
+
+    #sections > div{
+      background: white;
+      opacity: .2;
       margin-bottom: 200px;
-      height: 700px;
-      /* display: flex;
-      flex-direction: column;
-      justify-content: space-around; */
+    }
+    #sections > div:last-child{
+      margin-bottom: 30px;
+    }
+    #sections > div.graph-scroll-active{
+      opacity: 1;
     }
 
-    #app {
-      margin: auto;
-      width: 1500px;
-      flex-direction: row;
-      align-items: start;
-      justify-content: space-around;
+    #graph{
+      margin-left: 40px;
+      width: 500px;
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0px;
+      float: right;
     }
 
-    #vis {
-      display: inline-block;
-      position: fixed;
-      top: 0;
-      z-index: 1;
-      margin-left: 0;
-      height: 1000px;
-      width: 1000px;
+    @media (max-width: 925px)  {
+      #graph{
+        width: 100%;
+        margin-left: 0px;
+        float: none;
+      }
+
+      #sections{
+        width: auto;
+        position: relative;
+        margin: 0px auto;
+      }
+
+      #sections > div{
+        background: rgba(255,255,255,.5);
+        padding: 10px;
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+        margin-bottom: 80vh;
+      }
+
+      pre{
+        overflow: hidden;
+      }
+
+      h1{
+        margin: 10px;
+      }
+    }
+
+    circle{
+      fill: steelblue;
+    }
+
+    .mono{
+      font-family: monospace;
+    }
+
+    svg{
+      background-color: #eee;
     }
   }
 }
